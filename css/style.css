@@ -122,6 +122,40 @@ header nav li:last-child a {
 
 /* fin de header */
 
+/* inicio de footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--colorsecundario);
+    color: white;
+    padding: 1em 0.625em;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--colorprincipal);
+}
+
+.arriba {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    font-size: calc(var(--fontsize)*2);
+}
+
+.arriba a {
+    color: var(--colorprincipal);
+}
+
+/* fin de footer */
+
 @media(min-width: 48em) {
     header .nav-top a span {
         display: inline;
@@ -147,5 +181,4 @@ header nav li:last-child a {
         border: 0px;
         padding: 0.4em 1,25em;
     }
-
 }
