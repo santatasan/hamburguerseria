@@ -67,7 +67,7 @@ header .nav-top a span {
     display: none;
 }
 
-header .nav-top  .fa-phone {
+header .nav-top .fa-phone {
     transform: rotateZ(270deg);
 }
 
@@ -147,7 +147,7 @@ footer a:hover {
     position: fixed;
     bottom: 50px;
     right: 10px;
-    font-size: calc(var(--fontsize)*2);
+    font-size: 2em;
 }
 
 .arriba a {
@@ -155,6 +155,78 @@ footer a:hover {
 }
 
 /* fin de footer */
+
+/* inicio de hero */
+
+.hero {
+    background-image: url(../images/fondo.jpg);
+    background-color: #999;
+    background-blend-mode: multiply;
+    height: 60vh;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+}
+
+.hero h1 {
+    font-family: var(--fuentesecundaria);
+    font-size: calc(var(--fontsize)*2.3);
+    color: white;
+}
+
+.hero h2 {
+    color: var(--colorprincipal);
+    font-size: 1.25em;
+    margin: var(--margingrid) 0;
+    text-shadow: 1px 1px 3px black;
+}
+
+.hero p {
+    color: white;
+    font-size: 1.15em;
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--colorprincipal);
+    color: white;
+    text-decoration: none;
+    padding: 1.15em;
+    margin: var(--margingrid) 0;
+    border: 1px solid var(--colorprincipal);
+}
+
+.boton:hover {
+    color: var(--colorprincipal);
+    background-color: transparent;
+    border: 1px solid var(--colorprincipal);
+}
+
+.boton:hover i {
+    transition: 0.5s;
+    transform: translateX(5px);
+}
+
+.hero .social {
+    display: flex;
+    width: 165px;
+    justify-content: space-between;
+}
+
+.hero .social a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+/* fin de hero */
 
 @media(min-width: 48em) {
     header .nav-top a span {
