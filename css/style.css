@@ -228,6 +228,57 @@ footer a:hover {
 
 /* fin de hero */
 
+/* inicio de ourservices */
+
+main section {
+    padding: 3em 1em;
+}
+
+main section h2 {
+    color: black;
+    font-family: var(--fuentesecundaria);
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h2 span {
+    color: var(--colorprincipal);
+}
+
+main section .underline {
+    position: relative;
+    width: 100px;
+    margin: 0 auto;
+    font-weight: bold;
+    color: var(--colorprincipal);
+    text-align: center;
+}
+
+main section .underline hr {
+    position: absolute;
+    width: 100%;
+    border-color: var(--colorprincipal);
+    top: -2px;
+}
+
+main section .flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section .flex article {
+    width: 100%;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #aaa;
+}
+
+main section .flex article h3 {
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+/* fin de ourservices*/
+
 @media(min-width: 48em) {
     header .nav-top a span {
         display: inline;
