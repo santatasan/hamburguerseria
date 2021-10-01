@@ -1,0 +1,125 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
+/*
+font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif;
+*/
+
+html {
+    /* para generar animaciones de puntos de ancla */
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+:root {
+    --fuenteprincipal: 'Montserrat', sans-serif;
+    --fuentesecundaria: 'Handlee', cursive;
+    --colorprincipal: #fa573a;
+    --colorsecundario: #21242e;
+    --fontsize: 1em;
+    --margingrid: 1em;
+    --anchomaximo: 1100px;
+}
+
+.container {
+    max-width:  var(--anchomaximo);
+    margin: 0 auto;
+}
+
+body {
+    font-family: var(--fuenteprincipal);
+    font-size: var(--fontsize);
+}
+
+/* inicio de header */
+
+header .nav-top {
+    background-color: var(--colorsecundario);
+    padding: 20px 0px;
+}
+
+header .nav-top .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .nav-top a {
+    color: var(--colorprincipal);
+    text-decoration: none;
+}
+
+header .nav-top a i {
+    font-size: calc(var(--fontsize)*1.4);
+}
+
+header .nav-top a span {
+    color: white;
+    display: none;
+}
+
+header .nav-top  .fa-phone {
+    transform: rotateZ(270deg);
+}
+
+header nav {
+    padding: 20px 10px;
+}
+
+header nav .logo {
+    float: left;
+    max-width: 100px;
+}
+
+header nav .hamburguesa {
+    float: right;
+    width: 2em;
+    cursor: pointer;
+}
+
+header nav .hamburguesa div {
+    border-top: 0.125em solid #aaa;
+    margin-bottom: 0.625em;
+}
+
+header nav .menu {
+    clear: both;
+    padding-top: 0.625em;
+    text-align: center;
+}
+
+header nav .menu a {
+    display: block;
+    text-decoration: none;
+    padding: 1.25em;
+    color: #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+header nav .menu a:hover, header nav .menu .activo {
+    color: var(--colorprincipal);
+}
+
+header nav li:last-child a {
+    border-bottom: 0;
+}
+
+/* fin de header */
+
+@media(min-width: 48em) {
+    header .nav-top a span {
+        display: inline;
+    }
+    header .nav-top .container {
+        justify-content: space-between;
+    }
+}
