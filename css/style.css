@@ -113,6 +113,13 @@ header nav li:last-child a {
     border-bottom: 0;
 }
 
+    header nav:after {
+        content: "";
+        height: 0;
+        display: block;
+        clear: both;
+    }
+
 /* fin de header */
 
 @media(min-width: 48em) {
@@ -122,4 +129,23 @@ header nav li:last-child a {
     header .nav-top .container {
         justify-content: space-between;
     }
+}
+
+@media(min-width: 62.750em) {
+    header nav .hamburguesa {
+        display: none;
+    }
+    header nav .menu {
+        float: right;
+        padding-top: 0;
+        clear: none;
+    }
+    header nav .menu li {
+        display: inline-block;
+    }
+    header nav .menu a {
+        border: 0px;
+        padding: 0.4em 1,25em;
+    }
+
 }
