@@ -11,7 +11,7 @@ html {
     scroll-behavior: smooth;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -32,7 +32,7 @@ img {
 }
 
 .container {
-    max-width:  var(--anchomaximo);
+    max-width: var(--anchomaximo);
     margin: 0 auto;
 }
 
@@ -113,12 +113,12 @@ header nav li:last-child a {
     border-bottom: 0;
 }
 
-    header nav:after {
-        content: "";
-        height: 0;
-        display: block;
-        clear: both;
-    }
+header nav:after {
+    content: "";
+    height: 0;
+    display: block;
+    clear: both;
+}
 
 /* fin de header */
 
@@ -231,7 +231,7 @@ footer a:hover {
 /* inicio de ourservices */
 
 main section {
-    padding: 3em 1em;
+    padding: 2.5em 1em;
 }
 
 main section h2 {
@@ -274,7 +274,7 @@ main section .flex article {
 
 main section .flex article h3 {
     font-weight: 700;
-    margin: 0.5em 0;
+    margin: 0.5em 0em;
 }
 
 /* fin de ourservices*/
@@ -302,6 +302,6 @@ main section .flex article h3 {
     }
     header nav .menu a {
         border: 0px;
-        padding: 0.4em 1,25em;
+        padding: 0.4em 1.25em;
     }
 }
