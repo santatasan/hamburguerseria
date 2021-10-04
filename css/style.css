@@ -275,13 +275,16 @@ main section .flex article {
 main section .flex article h3 {
     font-weight: 700;
     margin: 0.5em 0em;
-    font-size: var(--fontsize);
 }
 
 main section p {
     color: #777;
     line-height: 1.10em;
     margin-bottom: 0.5em;
+}
+
+.fa-truck {
+    transform: rotateY(180deg);
 }
 
 .enlace {
@@ -295,10 +298,6 @@ main section .flex article div i {
     color: var(--colorprincipal);
     font-size: 150%;
     padding: 0.5em;
-}
-
-.fa-truck {
-    transform: rotateY(180deg);
 }
 
 /* fin de ourservices*/
