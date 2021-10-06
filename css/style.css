@@ -25,6 +25,7 @@ img {
     --fuenteprincipal: 'Montserrat', sans-serif;
     --fuentesecundaria: 'Handlee', cursive;
     --colorprincipal: #fa573a;
+    --colorprincipalopacidad: rgba(250, 87, 58, 0.7);
     --colorsecundario: #21242e;
     --fontsize: 1em;
     --margingrid: 1em;
@@ -266,7 +267,7 @@ main section .flex {
     flex-wrap: wrap;
 }
 
-main section .flex article {
+main #ourservices .flex article {
     width: 100%;
     padding: 2em 0em;
     border-bottom: 1px solid #aaa;
@@ -293,7 +294,7 @@ main section p {
     font-weight: 700;
 }
 
-main section .flex article div i {
+main #ourservices .flex article div i {
     border: 1px solid var(--colorprincipal);
     color: var(--colorprincipal);
     font-size: 150%;
@@ -336,17 +337,65 @@ main #aboutus figure:hover .marco, main #aboutus figure:hover .marco img {
 
 /* fin de aboutus */
 
+/* inicio de ourblogs */
+
+main #ourblogs .flex article {
+    width: 50%;
+    padding: 2em 1em;
+}
+
+main #ourblogs .flex article figure {
+    position: relative;
+}
+
+main #ourblogs .flex article figure div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--colorprincipalopacidad);
+}
+
+main #ourblogs .flex article figure div p {
+    font-weight: 700;
+    color: white;
+    font-size: calc(var(--fontsize)*1.1);
+    text-align: center;
+    margin: calc(var(--margingrid)*0.6) calc(var(--margingrid)*0.9);
+}
+
+main #ourblogs .flex article h3 {
+    margin: 1.5em 0.5em 1em 0.5em;
+}
+
+main #ourblogs .flex article small {
+    color: var(--colorprincipal);
+    margin: 0em 0.5em;
+    font-weight: 700;
+    font-size: calc(var(--fontsize)*0.9);
+}
+
+main #ourblogs .flex article>p {
+    margin: 1em 0.5em 1.5em 0.5em;
+    line-height: 1.40em;
+}
+
+main #ourblogs .enlace{
+    margin: 0em 0.5em;
+}
+
+/* final de ourblogs */
+
 /* media de 600px */
 
 @media(min-width: 37.500em) {
-    main section .flex article {
+    main #ourservices .flex article {
         width: calc(50% - (2*var(--margingrid)));
         padding: 0em var(--margingrid);
         border-left: 1px solid #aaa;
         border-bottom: 0;
         margin: var(--margingrid);
     }
-    main section .flex article:last-child {
+    main #ourservices .flex article:last-child {
         width: 100%;
     }
     main #aboutus .columna {
@@ -368,7 +417,7 @@ main #aboutus figure:hover .marco, main #aboutus figure:hover .marco img {
     header .nav-top .container {
         justify-content: space-between;
     }
-    main section .flex article, main section .flex article:last-child {
+    main #ourservices .flex article, main #ourservices .flex article:last-child {
         width: calc(33.333% - (2*var(--margingrid)));
     }
     footer {
@@ -393,5 +442,8 @@ main #aboutus figure:hover .marco, main #aboutus figure:hover .marco img {
     header nav .menu a {
         border: 0px;
         padding: 0.4em 1.25em;
+    }
+    main #ourblogs .flex article {
+        width: 33.333%;
     }
 }
