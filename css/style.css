@@ -379,11 +379,102 @@ main #ourblogs .flex article>p {
     line-height: 1.40em;
 }
 
-main #ourblogs .enlace{
+main #ourblogs .enlace {
     margin: 0em 0.5em;
 }
 
 /* final de ourblogs */
+
+/* inicio de menu */
+
+main #menu {
+    background-color: var(--colorsecundario);
+}
+
+main #menu h2 {
+    color: white;
+}
+
+main #menu h3 {
+    color: white;
+}
+
+main #menu p {
+    color: rgb(185, 183, 183);
+}
+
+main #menu .flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main #menu aside {
+    width: 100%;
+    margin-top: 50px;
+}
+
+main #menu aside ul li {
+    margin: 10px;
+}
+
+main #menu aside ul li a {
+    display: block;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+main #menu aside ul li a:hover, main #menu aside ul .activo a {
+    background-color: var(--colorprincipal);
+}
+
+main #menu aside .offers {
+    margin-top: 50px;
+}
+
+main #menu aside .offers hr {
+    width: 50px;
+    margin: 15px 0px;
+    border-color: var(--colorprincipal);
+}
+
+main #menu aside .offers p {
+    line-height: 1.40em;
+}
+
+main #menu .platos {
+    width: 100%;
+}
+
+main #menu .flex .platos article {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+main #menu .flex .platos article figure {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+main #menu .flex .platos article .texto {
+    width: 100%;
+}
+
+main #menu .flex .platos article .texto span {
+    color: var(--colorprincipal);
+    padding: 10px;
+}
+
+main #menu .flex .platos article .texto p {
+    padding: 10px 0px 20px 0px;
+    font-size: 90%;
+}
+
+/* final de menu */
 
 /* media de 600px */
 
@@ -406,6 +497,9 @@ main #ourblogs .enlace{
         width: 100%;
         margin: 0em;
     }
+    main #menu .flex .platos article {
+        width: 100%;
+    }
 }
 
 /* media de 768px */
@@ -422,6 +516,9 @@ main #ourblogs .enlace{
     }
     footer {
         text-align: left;
+    }
+    main #menu .flex .platos article {
+        width: 100%;
     }
 }
 
@@ -445,5 +542,38 @@ main #ourblogs .enlace{
     }
     main #ourblogs .flex article {
         width: 33.333%;
+    }
+    main #menu {
+        height: 85vh;
+    }
+    main #menu aside {
+        width: calc(35% - 90px);
+        margin-right: 90px;
+    }
+    main #menu aside .offers {
+        margin-top: 70px;
+    }
+    main #menu .platos {
+        width: 65%;
+        margin-top: 50px;
+    }
+    main #menu .flex .platos article {
+        width: 100%;
+        padding: 10px 0px 40px 0px;
+
+    }
+    main #menu .flex .platos article figure {
+        width: 20%;
+        padding: 0px;
+    }
+    main #menu .flex .platos article .texto {
+        width: 80%;
+        padding: 0px 0px 0px 30px;
+    }
+    main #menu .flex .platos article .texto h3 {
+        margin: 0px;
+    }
+    main #menu .flex .platos article .texto p {
+        margin: 0px;
     }
 }
